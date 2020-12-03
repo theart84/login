@@ -1,59 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="login-page-wrapp d-flex">
-      <div class="login-form-wrap d-flex align-items-center">
-        <div class="form-card card ml-auto">
-          <div class="card-body">
-            <h4 class="card-title">Please Login</h4>
-            <form name="loginForm">
-              <div class="form-group">
-                <label for="email">Email address</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  aria-describedby="emailHelp"
-                  placeholder="Enter email"
-                  data-required="email"
-                  data-invalid-message="Please provide valid email example@example.com"
-                />
-              </div>
-              <div class="form-group">
-                <label for="password">Password</label>
-                <input
-                  type="password"
-                  class="form-control"
-                  id="password"
-                  placeholder="Password"
-                  data-required="password"
-                />
-              </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <title>Document</title>
+</head>
+<body>
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="login-tab" data-toggle="tab" href="#login" role="tab" aria-controls="login"
+       aria-selected="true">Login</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="registry-tab" data-toggle="tab" href="#registration" role="tab" aria-controls="registry"
+       aria-selected="false">Registration</a>
+  </li>
+</ul>
+<div class="login-page-wrapp d-flex tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+  <div class="login-form-wrap d-flex align-items-center">
+    <div class="form-card card ml-auto">
+      <div class="card-body">
+        <h4 class="card-title">Please Login</h4>
+        <form name="loginForm">
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input
+                type="email"
+                class="form-control"
+                id="email"
+                aria-describedby="emailHelp"
+                placeholder="Enter email"
+                data-required="email"
+                data-invalid-message="Please provide valid email example@example.com"
+            />
           </div>
-        </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+                type="password"
+                class="form-control"
+                id="password"
+                placeholder="Password"
+                data-required="password"
+            />
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
       </div>
-      <!-- /.login-form-wrap -->
-      <div class="login-greeting-screen d-flex align-items-center">
-        <div class="login-greeting-screen-text">
-          <h1 class="login-greeting-screen-title">Welcome to my app</h1>
-          <p class="login-greeting-screen-description">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
-            inventore non accusantium earum, illo dolores reprehenderit laborum
-            ratione quos doloribus repellat eligendi deleniti. Ipsum voluptate
-            ipsa exercitationem eaque totam. A.
-          </p>
-        </div>
-      </div>
-      <!-- /.login-greeting-screen -->
     </div>
-    <!-- /.login-page-wrapp -->
-  </body>
+  </div>
+  <!-- /.login-form-wrap -->
+  <div class="login-greeting-screen d-flex align-items-center">
+    <div class="login-greeting-screen-text">
+      <h1 class="login-greeting-screen-title">Welcome to my app</h1>
+      <p class="login-greeting-screen-description">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
+        inventore non accusantium earum, illo dolores reprehenderit laborum
+        ratione quos doloribus repellat eligendi deleniti. Ipsum voluptate
+        ipsa exercitationem eaque totam. A.
+      </p>
+    </div>
+  </div>
+  <!-- /.login-greeting-screen -->
+</div>
+<div class="registration-page-wrapp d-flex tab-pane fade" id="registration" role="tabpanel"
+     aria-labelledby="registry-tab">
+  <div class="registration-form-wrap d-flex align-items-center">
+    <div class="form-card card mx-auto">
+      <div class="card-body">
+        <h4 class="card-title">Please Register</h4>
+        <form name="registrationForm" class="d-flex flex-wrap justify-content-between">
+          <div class="form-group">
+            <label for="registration-email">Email address</label>
+            <input
+                type="email"
+                class="form-control"
+                id="registration-email"
+                aria-describedby="emailHelp"
+                placeholder="Enter email"
+                data-required="email"
+                data-invalid-message="Please provide valid email example@example.com"
+            />
+          </div>
+          <div class="form-group">
+            <label for="registration-password">Password</label>
+            <input
+                type="password"
+                class="form-control"
+                id="registration-password"
+                placeholder="Password"
+                data-required="password"
+            />
+          </div>
+          <div class="form-group">
+            <label for="registration-nickname">Nickname</label>
+            <input
+                type="text"
+                class="form-control"
+                id="registration-nickname"
+                placeholder="Nickname"
+                data-required="nickname"
+            />
+          </div>
+          <div class="form-group">
+            <label for="registration-firstName">First name</label>
+            <input
+                type="text"
+                class="form-control"
+                id="registration-firstName"
+                placeholder="First name"
+                data-required="firstname"
+            />
+          </div>
+          <div class="form-group">
+            <label for="registration-lastName">Last name</label>
+            <input
+                type="text"
+                class="form-control"
+                id="registration-lastName"
+                placeholder="Last name"
+                data-required="lastname"
+            />
+          </div>
+          <div class="form-group">
+            <label for="registration-phone">Phone</label>
+            <input
+                type="tel"
+                class="form-control"
+                id="registration-phone"
+                placeholder="Phone"
+                data-required="phone"
+            />
+          </div>
+          <div class="form-group">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+              <label class="form-check-label" for="inlineRadio1">Male</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+              <label class="form-check-label" for="inlineRadio2">Female</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="registration-city">City</label>
+            <input
+                type="text"
+                class="form-control"
+                id="registration-city"
+                placeholder="City"
+                data-required="city"
+            />
+          </div>
+          <div class="form-group">
+            <label for="registration-country">Country</label>
+            <input
+                type="text"
+                class="form-control"
+                id="registration-country"
+                placeholder="Country"
+                data-required="country"
+            />
+          </div>
+          <div class="form-group">
+            <label for="registration-birthday">Birth day</label>
+            <input
+                type="date"
+                class="form-control"
+                id="registration-birthday"
+                placeholder="Birthday"
+                data-required="birthday"
+            />
+          </div>
+          <button type="submit" class="btn btn-primary">Registration</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
 </html>

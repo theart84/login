@@ -1,9 +1,16 @@
-.login-page-wrapp {
+.fade:not(.show) {
+  display: none !important;
+}
+.login-page-wrapp,
+.registration-page-wrapp {
   height: 100vh;
 }
 
-.login-form-wrap {
+.login-form-wrap{
   width: 50%;
+}
+.registration-form-wrap {
+  width: 100%;
 }
 
 .login-form-wrap .form-card {
@@ -11,8 +18,18 @@
   width: 100%;
   margin-right: 30px;
 }
+.registration-form-wrap .form-card {
+  max-width: 500px;
+  width: 100%;
+  margin-right: 30px;
+}
 
-.login-form-wrap .form-card .card-title {
+.form-group:nth-child(7),
+.form-group:nth-child(10){
+  flex-basis: 100%;
+}
+.login-form-wrap .form-card .card-title,
+.registration-form-wrap .form-card .card-title{
   color: var(--gray);
 }
 

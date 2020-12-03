@@ -1,4 +1,4 @@
-const UI = {
+const loginUI = {
   form: document.forms['loginForm'],
   inputEmail: document.getElementById('email'),
   inputPassword: document.getElementById('password'),
@@ -7,4 +7,4 @@ const UI = {
 
 
 
-export default UI;
+export default loginUI;
