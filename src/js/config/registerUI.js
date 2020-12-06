@@ -22,3 +22,11 @@ export function getGender() {
   }
 
 }
+
+export function parseDate() {
+  return {
+    day: registerUI.inputRegBirthDay.value.slice(8, 10),
+    month: registerUI.inputRegBirthDay.value.slice(5, 7),
+    year: registerUI.inputRegBirthDay.value.slice(0, 4),
+  }
+}

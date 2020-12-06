@@ -144,24 +144,16 @@
             </div>
           </div>
           <div class="form-group">
-            <label for="registration-city">City</label>
-            <input
-                type="text"
-                class="form-control"
-                id="registration-city"
-                placeholder="City"
-                data-required="city"
-            />
+            <label for="registration-country">Country</label>
+            <select class="custom-select country" id="registration-country">
+              <option >Choose your country...</option>
+            </select>
           </div>
           <div class="form-group">
-            <label for="registration-country">Country</label>
-            <input
-                type="text"
-                class="form-control"
-                id="registration-country"
-                placeholder="Country"
-                data-required="country"
-            />
+            <label for="registration-city">City</label>
+            <select class="custom-select" id="registration-city" disabled>
+              <option >Choose your city...</option>
+            </select>
           </div>
           <div class="form-group">
             <label for="registration-birthday">Birth day</label>
