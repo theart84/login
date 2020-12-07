@@ -5,7 +5,7 @@
  */
 function inputErrorTemplate(msg) {
   return `
-    <div class="invalid-feedback">${msg}</div>
+    <div class="invalid-tooltip">${msg}</div>
   `;
 }
 /**
@@ -26,7 +26,7 @@ export function showInputError(el) {
  */
 export function removeInputError(el) {
   const parent = el.parentElement;
-  const err = parent.querySelector('.invalid-feedback');
+  const err = parent.querySelector('.invalid-tooltip');
   if (!err) return;
 
   el.classList.remove('is-invalid');

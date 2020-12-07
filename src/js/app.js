@@ -46,6 +46,12 @@ inputs.forEach((el) => {
   });
 });
 
+inputsReg.forEach((el) => {
+  el.addEventListener('focus', () => {
+    removeInputError(el);
+  });
+});
+
 //Handlers
 
 async function onSubmit() {
@@ -95,7 +101,6 @@ async function onRegSubmit() {
     date_of_birth_month: +parseDate().month,
     date_of_birth_year: +parseDate().year,
   }
-  console.log(requestData)
   try {
     await registration(requestData);
   } catch (e) {
